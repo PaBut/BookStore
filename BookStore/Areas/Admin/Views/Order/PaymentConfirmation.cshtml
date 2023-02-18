@@ -1,0 +1,21 @@
+﻿@model int
+@{
+    ViewData["Title"] = "OrderConfirmation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+ 
+<div class="container row">
+    <div class="col-12 text-center">
+        <h1 class="text-primary text-center">Paid Successfully!</h1>
+        Your Order Number is : @Model <br /><br />
+        <img src="~/images/lawn_leaf.jpg" width="65%" />
+    </div>
+    <div class="col-12 text-center" style="color:maroon">
+        <br />
+        Payment has been applied successfully! <br />
+        <a asp-area="Admin" asp-route-orderId="@Model" class="btn btn-primary" asp-action="Details">Back to Order Details</a>
+    </div>
+</div> 
+
+
+
